@@ -47,7 +47,7 @@ const Singup = () => {
     if(firstName && email && password && confirmPassword){
       if(password === confirmPassword){
         
-        const fetchData = await fetch("http://localhost:8080/signup",{
+        const fetchData = await fetch("http://localhost:7000/signup",{
           method : "POST", 
             headers : {
               "content-type" : "application/json"
