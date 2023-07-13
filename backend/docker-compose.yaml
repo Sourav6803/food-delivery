@@ -1,0 +1,8 @@
+services:
+   api:
+      build:
+         context: ./backend
+         dockerfile: dockerfile
+      image: food-deliver:1.0.0
+      ports: 
+        - "7000:7000"
